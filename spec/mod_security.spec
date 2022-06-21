@@ -19,14 +19,14 @@
 Summary: Security module for the Apache HTTP Server
 Name: mod_security 
 Version: 2.9.5
-Release: 3%{?dist}
+Release: 4%{?dist}
 License: ASL 2.0
 URL: http://www.modsecurity.org/
 Group: System Environment/Daemons
 Source0: https://github.com/SpiderLabs/ModSecurity/releases/download/v%{version}/modsecurity-%{version}.tar.gz
-Source1: https://raw.githubusercontent.com/tilsor/mod_security/main/config/mod_security.conf
-Source2: https://raw.githubusercontent.com/tilsor/mod_security/main/config/10-mod_security.conf
-Source3: https://raw.githubusercontent.com/tilsor/mod_security/main/config/modsecurity_localrules.conf
+Source1: https://raw.githubusercontent.com/german3004/ModSecurity/main/config/mod_security.conf 
+Source2: https://raw.githubusercontent.com/german3004/ModSecurity/main/config/10-mod_security.conf
+Source3: https://raw.githubusercontent.com/german3004/ModSecurity/main/config/modsecurity_localrules.conf
 Requires: httpd httpd-mmn = %{_httpd_mmn}
 # Required for force recent TLS  version
 #BuildRequires: curl-devel yajl-devel
