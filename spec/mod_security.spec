@@ -23,7 +23,8 @@ Release: 1%{?dist}
 License: ASL 2.0
 URL: http://www.modsecurity.org/
 Group: System Environment/Daemons
-Source0: https://github.com/owasp-modsecurity/ModSecurity/releases/download/v%{version}/modsecurity-v%{version}.tar.gz
+#Source0: https://github.com/owasp-modsecurity/ModSecurity/releases/download/v%{version}/modsecurity-v%{version}.tar.gz
+Source0: https://github.com/tilsor/ModSecurity/archive/refs/tags/v2.9.8-1.tar.gz 
 Source1: https://raw.githubusercontent.com/german3004/ModSecurity/main/config/mod_security.conf 
 Source2: https://raw.githubusercontent.com/german3004/ModSecurity/main/config/10-mod_security.conf
 Source3: https://raw.githubusercontent.com/german3004/ModSecurity/main/config/modsecurity_localrules.conf
