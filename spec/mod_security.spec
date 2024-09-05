@@ -62,7 +62,7 @@ This package contains the ModSecurity Audit Log Collector.
 
 %prep
 #%setup -q -n modsecurity-v%{version}
-%setup -q -n modsecurity-%{version}-1
+%setup -q -n modsecurity-v%{version}-1
 
 %build
 %configure --enable-pcre-match-limit=1000000 \
