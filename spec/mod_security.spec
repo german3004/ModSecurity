@@ -18,12 +18,12 @@
 
 Summary: Security module for the Apache HTTP Server
 Name: mod_security 
-Version: 2.9.5
-Release: 5%{?dist}
+Version: 2.9.8
+Release: 0%{?dist}
 License: ASL 2.0
 URL: http://www.modsecurity.org/
 Group: System Environment/Daemons
-Source0: https://github.com/SpiderLabs/ModSecurity/releases/download/v%{version}/modsecurity-%{version}.tar.gz
+Source0: https://github.com/owasp-modsecurity/ModSecurity/releases/download/v%{version}/modsecurity-v%{version}.tar.gz
 Source1: https://raw.githubusercontent.com/german3004/ModSecurity/main/config/mod_security.conf 
 Source2: https://raw.githubusercontent.com/german3004/ModSecurity/main/config/10-mod_security.conf
 Source3: https://raw.githubusercontent.com/german3004/ModSecurity/main/config/modsecurity_localrules.conf
@@ -141,6 +141,9 @@ install -m0644 mlogc/mlogc-default.conf %{buildroot}%{_sysconfdir}/mlogc.conf
 %endif
 
 %changelog
+* Thu Sep 05 2024 Germán González <german3004@gmail.com> - 2.9.8-0
+- Update to 2.9.8
+
 * Wed Nov 24 2021 Felipe Zipitría <fzipitria@tilsor.com.uy> - 2.9.5-1
 - Update to 2.9.5
 
